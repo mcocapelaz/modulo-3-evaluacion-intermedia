@@ -4,7 +4,7 @@ import CountryList from "./CountryList.jsx";
 
 
 function App() {
-  const [countriesNames, setCountriesNames] = useState([
+  const [countriesNames, _setCountriesNames] = useState([
     { name: "Spain", flag: "🇪🇸" },
     { name: "Thailand", flag: "🇹🇭" },
     { name: "France", flag: "🇫🇷" },
@@ -15,10 +15,12 @@ function App() {
     { name: "Brazil", flag: "🇧🇷" },
     { name: "Republic of Guinea", flag: "🇬🇳" },
   ]);
+ 
 
-  const [search, setSearch]= useState(""); 
-  const filteredCountries = countriesNames.filter (country => 
-    country.name.toLowerCase().includes(search.toLowerCase())
+  const [filterText, setFilterText] = useState("");
+
+  const filteredCountries = countriesNames.filter((country) =>
+    country.name.toLowerCase().includes(filterText.toLowerCase())
   );
 
   return (
@@ -34,7 +36,12 @@ function App() {
       <section className="filters">
         <label>
           By Country
-          <input type="text" placeholder="Spain..." />
+          <input
+            type="text"
+            placeholder="Spain..."
+            value={filterText}
+            onChange={(e) => setFilterText(e.target.value)}
+          />
         </label>
         <label>
           By Continent
@@ -45,7 +52,6 @@ function App() {
             <option>Africa</option>
             <option>Oceania</option>
             <option>North America</option>
-            <option>South America</option>
           </select>
         </label>
       </section>
@@ -131,7 +137,7 @@ function App() {
           <button className="delete-btn">X</button>
         </div> */}
       </section> }
-        <CountryList countriesNames={countriesNames} />
+        <CountryList countriesNames={filteredCountries} />
     </div>
 
    
