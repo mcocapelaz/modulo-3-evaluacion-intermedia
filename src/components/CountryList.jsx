@@ -1,6 +1,4 @@
 
-
-
 function CountryList({ countriesNames }) {
   return (
     <section className="country-list">

@@ -16,6 +16,11 @@ function App() {
     { name: "Republic of Guinea", flag: "🇬🇳" },
   ]);
 
+  const [search, setSearch]= useState(""); 
+  const filteredCountries = countriesNames.filter (country => 
+    country.name.toLowerCase().includes(search.toLowerCase())
+  );
+
   return (
     <div className="country-info-app">
       <header>
