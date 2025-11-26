@@ -1,6 +1,11 @@
+import { useState } from "react";
 import "../styles/App.scss";
 
 function App() {
+
+
+
+
   return (
     <div className="country-info-app">
   <header>
@@ -61,7 +66,7 @@ function App() {
     </div>
 
     <div className="country-card">
-      <span className="flag">🇫🇷</span>
+      <span className="flag">🇺🇸</span>
       <h2>United States of America</h2>
       <p>Washington, D.C.</p>
       <p>North America</p>
@@ -82,7 +87,31 @@ function App() {
       <p>Papeeté</p>
       <p>Oceania</p>
       <button className="delete-btn">X</button>
-    </div>    
+    </div>  
+
+    <div className="country-card">
+      <span className="flag">🇹🇼</span>
+      <h2>Taiwan</h2>
+      <p>Taipei</p>
+      <p>Asia</p>
+      <button className="delete-btn">X</button>
+    </div>   
+
+    <div className="country-card">
+      <span className="flag">🇧🇷</span>
+      <h2>Brazil</h2>
+      <p>Brasília</p>
+      <p>South America</p>
+      <button className="delete-btn">X</button>
+    </div>  
+
+    <div className="country-card">
+      <span className="flag">🇬🇳</span>
+      <h2>Republic of Guinea</h2>
+      <p>Conakry</p>
+      <p>Africa</p>
+      <button className="delete-btn">X</button>
+    </div>   
   </section>
 </div>
 
