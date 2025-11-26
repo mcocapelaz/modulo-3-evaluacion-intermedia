@@ -1,1 +1,3 @@
-# modulo-3-evaluacion-intermedia
+# Proyecto con React
+
+Escribe la carta de presentación de tu proyecto.
