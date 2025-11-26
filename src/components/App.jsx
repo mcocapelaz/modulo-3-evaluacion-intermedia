@@ -53,8 +53,8 @@ function App() {
         <button>Add Country</button>
       </section>
 
-      <section className="country-list">
-        <div className="country-card">
+      {<section className="country-list">
+        {/* <div className="country-card">
           <span className="flag">🇪🇸</span>
           <h2>Spain</h2>
           <p>Madrid</p>
@@ -124,8 +124,8 @@ function App() {
           <p>Conakry</p>
           <p>Africa</p>
           <button className="delete-btn">X</button>
-        </div>
-      </section>
+        </div> */}
+      </section> }
         <CountryList countriesNames={countriesNames} />
     </div>
 
