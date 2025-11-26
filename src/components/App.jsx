@@ -1,8 +1,10 @@
 import { useState } from "react";
 import "../styles/App.scss";
+import CountryList from "./CountryList.jsx";
+
 
 function App() {
-  const countries = [countriesNames, setCountriesNames] = useState([
+  const [countriesNames, setCountriesNames] = useState([
     { name: "Spain", flag: "🇪🇸" },
     { name: "Thailand", flag: "🇹🇭" },
     { name: "France", flag: "🇫🇷" },
@@ -124,7 +126,10 @@ function App() {
           <button className="delete-btn">X</button>
         </div>
       </section>
+        <CountryList countriesNames={countriesNames} />
     </div>
+
+   
   );
 }
 
