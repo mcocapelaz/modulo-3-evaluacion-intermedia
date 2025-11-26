@@ -5,15 +5,15 @@ import CountryList from "./CountryList.jsx";
 
 function App() {
   const [countriesNames, _setCountriesNames] = useState([
-    { name: "Spain", flag: "🇪🇸" },
-    { name: "Thailand", flag: "🇹🇭" },
-    { name: "France", flag: "🇫🇷" },
-    { name: "United States of America", flag: "🇺🇸" },
-    { name: "Republic of Singapore", flag: "🇸🇬" },
-    { name: "French Polynesia", flag: "🇫🇷" },
-    { name: "Taiwan", flag: "🇹🇼" },
-    { name: "Brazil", flag: "🇧🇷" },
-    { name: "Republic of Guinea", flag: "🇬🇳" },
+    { name: "Spain", flag: "🇪🇸", capital: "Madrid", continent: "Europe" },
+    { name: "Thailand", flag: "🇹🇭", capital: "Bangkok", continent: "Asia" },
+    { name: "France", flag: "🇫🇷", capital: "Paris", continent: "Europe" },
+    { name: "United States of America", flag: "🇺🇸", capital: "Washington D.C.", continent: "North America" },
+    { name: "Republic of Singapore", flag: "🇸🇬", capital: "Singapore", continent: "Asia" },
+    { name: "French Polynesia", flag: "🇫🇷", capital: "Papeeté", continent: "Oceania"  },
+    { name: "Taiwan", flag: "🇹🇼", capital: "Taipei", continent: "Asia" },
+    { name: "Brazil", flag: "🇧🇷", capital: "Brazilia", continent: "South America" },
+    { name: "Republic of Guinea", flag: "🇬🇳", capital: "Conakry", continent: "Africa"  },
   ]);
  
 
